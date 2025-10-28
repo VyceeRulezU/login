@@ -60,7 +60,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--color-bg-light);
+  /* background: var(--color-bg-light); */
+  background-color: #1e1e2f;
   box-shadow: var(--shadow-card);
   border-radius: var(--border-radius);
 }
@@ -72,9 +73,9 @@ body {
 
 .title {
   text-align: center;
-  color: var(--color-primary);
+  color: var(--color-text-light);
   font-size: var(--font-size-heading);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .subtitle {
@@ -101,15 +102,17 @@ body {
 
 .form-group label {
   font-size: 0.9rem;
+  font-weight: 200;
   display: block;
   margin-bottom: 0.5rem;
-  color: var(--color-text-dark);
+  color: var(--color-text-light);
 }
 
 .form-group input {
   width: 100%;
   padding: 0.8rem 1rem;
-  border: 1px solid #e0e0e0;
+  background-color: #2c2c3e;
+  border: 1px solid #40405a;
   border-radius: var(--input-radius);
   outline: none;
   font-size: 1rem;
@@ -121,6 +124,10 @@ body {
   box-shadow: 0 0 0 2px rgba(43, 102, 246, 0.15);
 }
 
+.form-options{
+    color: var(--color-muted);
+}
+
 .btn-primary {
   width: 100%;
   background: var(--color-primary);
@@ -128,7 +135,8 @@ body {
   border: none;
   padding: 0.9rem;
   border-radius: var(--input-radius);
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 300;
   cursor: pointer;
   transition: background 0.3s ease;
   margin-top: 1.5rem;
@@ -142,6 +150,7 @@ body {
   text-align: center;
   margin-top: 1rem;
   font-size: 0.9rem;
+  color: var(--color-muted);
 }
 
 .switch-text a {
